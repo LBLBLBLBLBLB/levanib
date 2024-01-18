@@ -1,5 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700;900&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Roboto Mono", monospace;
+}
+.content {
+  padding: 4rem 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9.6rem;
+}
+nav ul {
+  display: flex;
+  gap: 5rem;
+}
+li {
+  list-style-type: none;
+}
+.nav-link {
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: black;
+}
+.switch-theme {
+  width: 5rem;
+  height: 2rem;
+  background-color: black;
+}
+h2 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+.about-section p {
+  font-size: 1.8rem;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 4.2rem 0;
+}
+h3 {
+  font-size: 3.2rem;
+  margin-bottom: 2.6rem;
+}
+.project-name {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.pr-line-vert {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.project-links span {
+  font-size: 1.4rem;
+}
+.project-links {
+  font-weight: 500;
+  display: flex;
+  gap: 0.3rem;
+}
+.project-link {
+  color: black;
+  font-size: 1.4rem;
+}
+
+.project-description li {
+  letter-spacing: 0.3px;
+
+  font-size: 1.3rem;
+  list-style-type: disc;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  list-style-position: inherit;
+}
+.project {
+  margin-bottom: 5rem;
+}
+.education {
+  margin-top: 2.2rem;
+}
+.education-name {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+.education-name p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.edu-txt {
+  margin-top: 0.6rem;
+  font-size: 1.3rem;
+}
+.edu-txt span {
+  font-weight: 500;
 }
