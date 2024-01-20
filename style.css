@@ -37,12 +37,12 @@ li {
   background-color: black;
 }
 h2 {
-  font-size: 6.4rem;
+  font-size: 6.6rem;
   font-weight: 700;
   margin-bottom: 2.4rem;
 }
 .about-section p {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .line {
   width: 100%;
@@ -51,7 +51,7 @@ h2 {
   margin: 4.2rem 0;
 }
 h3 {
-  font-size: 3.2rem;
+  font-size: 3.4rem;
   margin-bottom: 2.6rem;
 }
 .project-name {
@@ -61,15 +61,15 @@ h3 {
   margin-bottom: 2rem;
 }
 h4 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 .pr-line-vert {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 .project-links span {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .project-links {
   font-weight: 500;
@@ -78,13 +78,13 @@ h4 {
 }
 .project-link {
   color: black;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .project-description li {
   letter-spacing: 0.3px;
 
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   list-style-type: disc;
   margin-bottom: 0.5rem;
   font-weight: 400;
@@ -103,13 +103,21 @@ h4 {
   margin-bottom: 2rem;
 }
 .education-name p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 .edu-txt {
   margin-top: 0.6rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .edu-txt span {
-  font-weight: 500;
+  font-weight: 700;
+}
+
+.skills-section p {
+  font-size: 1.5rem;
+}
+
+.skills-section p span {
+  font-weight: 700;
 }
