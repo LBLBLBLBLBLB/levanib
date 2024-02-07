@@ -50,8 +50,25 @@ li {
 .nav-link {
   font-size: 2.2rem;
   text-decoration: none;
+  position: relative;
 }
 
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--txt-color);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 h2 {
   font-size: 6.6rem;
   font-weight: 700;
@@ -168,7 +185,7 @@ h4 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #b5c0c7;
+  background-color: #1a1a1a;
   transition: 0.4s;
   border-radius: 20px;
   box-shadow: 0 0 0.25em rgba(67, 71, 85, 0.27),
@@ -181,7 +198,7 @@ h4 {
   width: 16px;
   left: 4px;
   bottom: 4px;
-  background-color: #ffff80;
+  background-color: #f8de22;
   transition: 0.4s;
   border-radius: 50%;
   text-align: center;
