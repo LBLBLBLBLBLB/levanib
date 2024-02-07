@@ -1,5 +1,5 @@
 const root_colors = document.querySelector(":root");
-const theme_switch = document.querySelector(".switch-theme");
+const theme_switch = document.getElementById("theme-switcher");
 
 let isDarkMode = false;
 
