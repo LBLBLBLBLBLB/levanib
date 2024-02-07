@@ -27,6 +27,7 @@ html {
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 /* main content */
@@ -199,8 +200,25 @@ h4 {
   left: 4px;
   bottom: 4px;
   background-color: #f8de22;
+  box-shadow: 0 0 10px #f8de22;
   transition: 0.4s;
   border-radius: 50%;
   text-align: center;
   line-height: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
