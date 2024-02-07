@@ -33,7 +33,7 @@ body {
 
 /* main content */
 .content {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 1rem 2rem;
   max-width: 75rem;
   margin: 0 auto;
 }
@@ -55,7 +55,10 @@ li {
   position: relative;
   cursor: pointer;
 }
-
+.li-stack {
+  font-weight: 700;
+  text-decoration: underline;
+}
 .nav-link::after {
   content: "";
   position: absolute;
@@ -77,8 +80,25 @@ h2 {
   font-weight: 700;
   margin-bottom: 2.4rem;
 }
-.about-section p {
+.about-section p,
+a {
   font-size: 2rem;
+}
+.social {
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.social a {
+  cursor: pointer;
+}
+.soc-ic {
+  font-size: 2rem;
+  color: var(--txt-color);
+}
+.soc-n {
+  font-weight: 700;
 }
 .line {
   width: 100%;
@@ -156,6 +176,11 @@ h4 {
 
 .skills-section p span {
   font-weight: 700;
+}
+.foot-ic {
+  color: var(--txt-color);
+  font-size: 3rem;
+  cursor: pointer;
 }
 
 /* theme switcher */

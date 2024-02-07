@@ -1,19 +1,32 @@
 const root_colors = document.querySelector(":root");
-const theme_switch = document.getElementById("theme-switcher");
+const themeSwitch = document.getElementById("theme-switcher");
 
 let isDarkMode = false;
 
-theme_switch.addEventListener("click", () => {
+const setDarkMode = () => {
+  root_colors.style.setProperty("--txt-color", "#fff");
+  root_colors.style.setProperty("--background-color", "#000");
+};
+
+const setLightMode = () => {
+  root_colors.style.setProperty("--txt-color", "#000");
+  root_colors.style.setProperty("--background-color", "#fff");
+};
+
+themeSwitch.addEventListener("click", () => {
   isDarkMode = !isDarkMode;
 
   if (isDarkMode) {
-    root_colors.style.setProperty("--txt-color", "#fff");
-    root_colors.style.setProperty("--background-color", "#000");
+    setDarkMode();
   } else {
-    root_colors.style.setProperty("--txt-color", "#000");
-    root_colors.style.setProperty("--background-color", "#fff");
+    setLightMode();
   }
 });
+
+// const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+// const prefersDarkMode = darkModeMediaQuery.matches;
+
+// prefersDarkMode ? setDarkMode() : setLightMode();
 
 // cursor animation
 const circleEl = document.querySelector(".circle");
