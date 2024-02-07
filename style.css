@@ -4,6 +4,7 @@
 :root {
   --txt-color: #000;
   --background-color: #fff;
+  --circle-size: 4rem;
 }
 li,
 h2,
@@ -19,6 +20,7 @@ span {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  cursor: default;
 }
 html {
   font-size: 62.5%;
@@ -27,7 +29,6 @@ html {
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: var(--background-color);
-  overflow-x: hidden;
 }
 
 /* main content */
@@ -52,6 +53,7 @@ li {
   font-size: 2.2rem;
   text-decoration: none;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-link::after {
@@ -112,6 +114,7 @@ h4 {
 }
 .project-link {
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 .project-description li {
@@ -200,13 +203,14 @@ h4 {
   left: 4px;
   bottom: 4px;
   background-color: #f8de22;
-  box-shadow: 0 0 10px #f8de22;
+  box-shadow: 0 0 5px #f8de22;
   transition: 0.4s;
   border-radius: 50%;
   text-align: center;
   line-height: 16px;
 }
 
+/* scroll */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -221,4 +225,15 @@ h4 {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.circle {
+  position: fixed;
+  height: var(--circle-size);
+  width: var(--circle-size);
+  border: 1px solid var(--txt-color);
+  border-radius: 100%;
+  top: calc(var(--circle-size) / 2 * -1);
+  left: calc(var(--circle-size) / 2 * -1);
+  pointer-events: none;
 }
