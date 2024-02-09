@@ -196,16 +196,11 @@ h4 {
   height: 0;
 }
 .switch input:checked + .slider {
-  background-color: #476173;
+  background-color: var(--txt-color);
 }
 .switch input:checked + .slider:before {
   transform: translateX(20px);
-  background-color: transparent;
-  border-radius: 50%;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  box-shadow: inset -5px -3px 0 #d8e9ef;
+  background-color: var(--background-color);
 }
 .switch .slider {
   position: absolute;
@@ -214,11 +209,9 @@ h4 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #1a1a1a;
+  background-color: var(--txt-color);
   transition: 0.4s;
   border-radius: 20px;
-  box-shadow: 0 0 0.25em rgba(67, 71, 85, 0.27),
-    0.2px 0.2em 24px 0 rgba(1, 29, 77, 0.15);
 }
 .switch .slider:before {
   position: absolute;
@@ -227,8 +220,8 @@ h4 {
   width: 16px;
   left: 4px;
   bottom: 4px;
-  background-color: #f8de22;
-  box-shadow: 0 0 5px #f8de22;
+  background-color: var(--background-color);
+
   transition: 0.4s;
   border-radius: 50%;
   text-align: center;
