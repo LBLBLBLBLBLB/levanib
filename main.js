@@ -1,7 +1,7 @@
 const root_colors = document.querySelector(":root");
 const themeSwitch = document.getElementById("theme-switcher");
 
-let isDarkMode = false;
+let isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 const setDarkMode = () => {
   root_colors.style.setProperty("--txt-color", "#fff");
@@ -13,20 +13,22 @@ const setLightMode = () => {
   root_colors.style.setProperty("--background-color", "#fff");
 };
 
-themeSwitch.addEventListener("click", () => {
-  isDarkMode = !isDarkMode;
-
+const updateTheme = () => {
   if (isDarkMode) {
     setDarkMode();
+    themeSwitch.checked = true;
   } else {
     setLightMode();
+    themeSwitch.checked = false;
   }
+};
+
+themeSwitch.addEventListener("click", () => {
+  isDarkMode = !isDarkMode;
+  updateTheme();
 });
 
-// const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-// const prefersDarkMode = darkModeMediaQuery.matches;
-
-// prefersDarkMode ? setDarkMode() : setLightMode();
+updateTheme();
 
 // cursor animation
 const circleEl = document.querySelector(".circle");
