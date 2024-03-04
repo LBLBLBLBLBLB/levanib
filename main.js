@@ -87,7 +87,6 @@ tick();
 // up to top functionality
 document.addEventListener("DOMContentLoaded", function () {
   const scrollToTopBtn = document.querySelector(".up-to-nav");
-  let isScrolling;
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > 280) {
