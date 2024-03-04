@@ -1,3 +1,3 @@
-#Personal Project
+# Personal Project
 
-Tech Stack: Javascript, HTML, CSS
+## Tech Stack: Javascript, HTML, CSS
