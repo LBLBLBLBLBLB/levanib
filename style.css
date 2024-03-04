@@ -25,10 +25,12 @@ span {
 html {
   font-size: 62.5%;
   font-family: "Roboto Mono", monospace;
+  scroll-behavior: smooth;
 }
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: var(--background-color);
+  position: relative;
 }
 
 /* main content */
@@ -40,14 +42,22 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 9.6rem;
 }
-nav ul {
+
+.nav-links {
   display: flex;
   gap: 5rem;
 }
 li {
   list-style-type: none;
+}
+.nav-ic {
+  display: none;
+  color: var(--txt-color);
+  font-size: 3rem;
+  cursor: pointer;
 }
 .nav-link {
   font-size: 2.2rem;
@@ -99,6 +109,10 @@ a {
 }
 .soc-n {
   font-weight: 700;
+  font-size: 1.8rem;
+}
+.email {
+  font-size: 2rem;
 }
 .line {
   width: 100%;
@@ -254,4 +268,34 @@ h4 {
   top: calc(var(--circle-size) / 2 * -1);
   left: calc(var(--circle-size) / 2 * -1);
   pointer-events: none;
+}
+
+.up-to-nav {
+  display: none;
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid var(--txt-color);
+  bottom: 10rem;
+  right: 15rem;
+
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.up-to-nav-ic {
+  color: var(--txt-color);
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
 }

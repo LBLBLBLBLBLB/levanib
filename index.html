@@ -8,19 +8,20 @@
   </head>
   <body>
     <div class="content">
-      <nav>
+      <nav id="nav">
         <ul class="nav-links">
-          <li><a class="nav-link" href="#">About</a></li>
-          <li><a class="nav-link" href="#">Education</a></li>
-          <li><a class="nav-link" href="#">Skills</a></li>
-          <li><a class="nav-link" href="#">Projects</a></li>
+          <li><a class="nav-link" href="#about-section">About</a></li>
+          <li><a class="nav-link" href="#education-section">Education</a></li>
+          <li><a class="nav-link" href="#skills-section">Skills</a></li>
+          <li><a class="nav-link" href="#projects-section">Projects</a></li>
         </ul>
         <label for="theme-switcher" class="switch">
           <input type="checkbox" id="theme-switcher" />
           <span class="slider round"></span>
         </label>
       </nav>
-      <section class="about-section">
+
+      <section class="about-section" id="#about-section">
         <div>
           <h2>Hi, I'm Levani</h2>
           <div>
@@ -47,14 +48,15 @@
             <div class="social">
               <ion-icon name="mail" class="soc-ic"></ion-icon>
               <p class="soc-n">Email:</p>
-              <p>levanbirchadze@gmail.com</p>
+              <p class="email">levanbirchadze@gmail.com</p>
             </div>
           </div>
         </div>
       </section>
-      <div class="links"></div>
+
       <div class="line"></div>
-      <section class="education-section">
+
+      <section class="education-section" id="education-section">
         <h3>Education:</h3>
         <div class="education">
           <div class="education-name">
@@ -84,18 +86,22 @@
           </p>
         </div>
       </section>
+
       <div class="line"></div>
-      <section class="skills-section">
+
+      <section class="skills-section" id="skills-section">
         <h3>Skills:</h3>
         <p>
           <span>Tech Stack:</span>
           JavaScript/TypeScript, Python, HTML, CSS, React, TailwindCss,
           Node.js(basics), SQL, Git, Github, npm, Linux(Ubuntu), VS code,
+          Postman
         </p>
       </section>
 
       <div class="line"></div>
-      <section class="projects-section">
+
+      <section class="projects-section" id="projects-section">
         <h3>Projects:</h3>
         <div class="project">
           <div class="project-name">
@@ -169,6 +175,7 @@
           </ul>
         </div>
       </section>
+
       <div class="line"></div>
       <footer class="social">
         <a href="https://github.com/LBLBLBLBLBLB" target="_blank">
@@ -181,6 +188,10 @@
           <ion-icon name="logo-linkedin" class="foot-ic l-ic"></ion-icon>
         </a>
       </footer>
+    </div>
+
+    <div class="up-to-nav">
+      <ion-icon class="up-to-nav-ic" name="chevron-up"></ion-icon>
     </div>
 
     <div class="circle"></div>
