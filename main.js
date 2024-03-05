@@ -1,7 +1,10 @@
+// switch themes dark/light
 const root_colors = document.querySelector(":root");
 const themeSwitch = document.getElementById("theme-switcher");
 
 let isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const titleIcon = document.getElementById("title-ic");
 
 const setDarkMode = () => {
   root_colors.style.setProperty("--txt-color", "#fff");
@@ -17,8 +20,10 @@ const updateTheme = () => {
   if (isDarkMode) {
     setDarkMode();
     themeSwitch.checked = true;
+    titleIcon.href = "white.png";
   } else {
     setLightMode();
+    titleIcon.href = "black.png";
     themeSwitch.checked = false;
   }
 };
@@ -84,7 +89,7 @@ const tick = () => {
 };
 tick();
 
-// up to top functionality
+// scroll to top functionality
 document.addEventListener("DOMContentLoaded", function () {
   const scrollToTopBtn = document.querySelector(".up-to-nav");
 
