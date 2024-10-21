@@ -7,13 +7,13 @@ let isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const titleIcon = document.getElementById("title-ic");
 
 const setDarkMode = () => {
-  root_colors.style.setProperty("--txt-color", "#fff");
-  root_colors.style.setProperty("--background-color", "#000");
+  root_colors.style.setProperty("--txt-color", "#e6e6e6");
+  root_colors.style.setProperty("--background-color", "#0a0a0a");
 };
 
 const setLightMode = () => {
-  root_colors.style.setProperty("--txt-color", "#000");
-  root_colors.style.setProperty("--background-color", "#fff");
+  root_colors.style.setProperty("--txt-color", "#0a0a0a");
+  root_colors.style.setProperty("--background-color", "#e6e6e6");
 };
 
 const updateTheme = () => {
